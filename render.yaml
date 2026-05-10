@@ -2,7 +2,6 @@ services:
   - type: cron
     name: daily-digest-job
     runtime: python
-    plan: free
     schedule: "0 5 * * *"
     buildCommand: |
       pip install uv
